@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculadora Exemplo</title>
+  </head>
+  <body>
+    <script>
+      let valor1 = parseFloat(prompt("Insira o primeiro valor:", ""));
+      let valor2 = parseFloat(prompt("Insira o segundo valor:", ""));
+      var operacao = prompt(
+        "Selecione a sua operação: 1 - somar, 2 multiplicar, ou 3 - Dividir",
+        ""
+      );
+      switch (operacao) {
+        case "1":
+          let soma = valor1 + valor2;
+          alert("A soma é: " + soma);
+          break;
+        case "2":
+          let multiplicacao = valor1 * valor2;
+           alert("A multiplicação é: " + multiplicacao);
+          break;
+        case "3":
+          let divisao = valor1 / valor2;
+          alert("A divisão é? " + divisao);
+          break;
+      }
+    </script>   
+  </body>
+</html>
